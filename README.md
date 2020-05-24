@@ -33,12 +33,9 @@ Raw models are formatted as a list of dicts. See below for the format:
     [
         {
             "text": "<text in the language>",
-            "category": "<the language>"
+            "language": "<the language>"
         }
     ]
-
-Note that the attribute for the language name is `category`, **not**
-`language`.
 
 Although LDTC handles models as Python lists (for raw models) or dicts (for
 compiled models), I recommend storing them in JSON format, mainly because the
@@ -51,12 +48,11 @@ disable this in the library. (It's in a comment so you can't do it without
 some effort.) The warning cannot be disabled in the CLI program without
 hacking the source.
 
-<!-- ## Example models
-I provide an example model trained to distinguish between texts written by
-Mark Twain and those written by William Shakespeare. I chose them because
-their works have all gone into the public domain, and their writing style is
-so different that LDTC can easily tell the difference, making it a good
-demonstration.
+## Example models
+I provide an example model trained to distinguish between English and Spanish.
+The text comes from https://es.wikipedia.org/wiki/Computadora (for Spanish)
+and https://en.wikipedia.org/wiki/Computer (for English). Note that it is just
+a demonstration; a production model should be significantly larger.
 
-The raw model is in `twain_shakespeare_raw.json`; the compiled model is in
-`twain_shakespeare.json`. -->
+The raw model is in `raw-eng-spa.json`; the compiled model is in
+`eng-spa.json`.
