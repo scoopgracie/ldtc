@@ -1,6 +1,6 @@
 # LDTC
 LDTC, Language-Detecting Text Classifier, is a pure Python trainable language
-detector with no external dependencies.
+detector with no non-stdlib dependencies.
 
 ## CLI Tool
 If you just want to do some simple detection on the command line, use the
